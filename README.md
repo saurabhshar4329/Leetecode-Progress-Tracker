@@ -27,8 +27,8 @@ A simple web app that fetches a LeetCode user's public stats (via LeetCode's Gra
 ```
 leetcode-matrix/
 ├── index.html
-├── leetMatrix.css
-├── leetCodeMatrix.js
+├── leetProgressTracker.css
+├── leetProgressTracker.js
 └── README.md
 ```
 
@@ -41,19 +41,7 @@ Since LeetCode's GraphQL endpoint doesn't send CORS headers for browser requests
 - Your own lightweight proxy (Cloudflare Worker, Vercel Edge Function, or a small Express server)
 - A public proxy service (note: free public proxies are often rate-limited or temporarily locked)
 
-Update the `PROXY_URL` variable in `leetCodeMatrix.js` to point to your proxy before running the app.
-
-### Installation
-
-1. Clone the repo
-   ```bash
-   git clone https://github.com/your-username/leetcode-matrix.git
-   ```
-2. Navigate into the project folder
-   ```bash
-   cd leetcode-matrix
-   ```
-3. Open `index.html` in your browser, or serve it with a local dev server (e.g. VS Code Live Server)
+Update the `PROXY_URL` variable in `leetProgressTracker.js` to point to your proxy before running the app.
 
 ## Usage
 
@@ -65,7 +53,7 @@ Update the `PROXY_URL` variable in `leetCodeMatrix.js` to point to your proxy be
 
 This project uses `cors-anywhere.herokuapp.com` as a temporary CORS proxy to fetch data from LeetCode's GraphQL API. Since it's a public demo instance, it's locked by default and needs to be manually activated per browser session:
 
-1. Open `leetCodeMatrix.js` and copy the value of `proxyUrl`
+1. Open `leetProgressTracker.js` and copy the value of `proxyUrl`
 2. Paste that URL into your browser's address bar and visit it
 3. Click **"Request temporary access to the demo server"**
 4. Return to the app and enter a LeetCode username to search
@@ -93,4 +81,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+https://github.com/saurabhshar4329
